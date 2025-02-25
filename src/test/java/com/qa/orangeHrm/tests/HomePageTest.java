@@ -25,8 +25,8 @@ public class HomePageTest extends BaseTest{
 	@Test(priority=Integer.MAX_VALUE)
 	public void doGetDemoTest()
 	{
-		homePage.dolo();
-		//Assert.assertEquals(actualTitle,"ThankYou for choosing");
+		coustmerSuccessStoryPage=homePage.dogetAnotherPage();
+		Assert.assertEquals(coustmerSuccessStoryPage.getCoustmerPageTitle(),"HR Software Customer Reviews | OrangeHRM");
 		
 	}
 	

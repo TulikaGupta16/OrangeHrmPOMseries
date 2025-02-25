@@ -47,7 +47,7 @@ public class HomePage {
 //    	
 //    }
     
-    public void dolo()
+    public CoustmerSuccessStoryPage dogetAnotherPage()
     {
     	Actions act = new Actions(driver);
     	act.moveToElement(driver.findElement(dropdown)).perform();
@@ -55,7 +55,7 @@ public class HomePage {
 //    	WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 //    	wait.until(ExpectedConditions.visibilityOf(driver.findElement(customers))).click();;
     	act.click(driver.findElement(customers)).perform();
-    	
+    	return new  CoustmerSuccessStoryPage(driver);
     }
     
     
